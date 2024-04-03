@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="/src/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,7 +17,7 @@
   <body>
     <div class="container">
       <header>
-        <h1>AI <span class="poem"> Poem</span> Generator</h1>
+        <h1>AI <span class="poem">Landscape Poem</span> Generator</h1>
       </header>
       <main>
         <form id="poem-generator-form">
@@ -26,6 +27,7 @@
             autofocus
             required
             class="poem-write"
+            id="poem-instructions"
           />
           <input type="submit" class="submit-button" />
         </form>
