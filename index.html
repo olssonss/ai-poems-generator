@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="/src/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,7 +19,7 @@
         <h1>AI <span class="poem"> Poem</span> Generator</h1>
       </header>
       <main>
-        <form>
+        <form id="poem-generator-form">
           <input
             type="text"
             placeholder="Enter topic of poem"
@@ -30,12 +30,7 @@
           <input type="submit" class="submit-button" />
         </form>
 
-        <div class="poem-display">
-          Whose woods these are I think I know. His house is in the village
-          though;
-          <br />
-          He will not see me stopping here To watch his woods fill up with snow.
-        </div>
+        <div class="poem-display" id="poem-display"></div>
       </main>
       <div>
         <footer>
