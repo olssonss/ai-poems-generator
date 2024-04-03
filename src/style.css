@@ -1,5 +1,4 @@
 body {
-  text-align: center;
   background-color: #eef4fa;
   font-family: "Poppins", sans-serif;
 
@@ -9,29 +8,45 @@ body {
 h1 {
   font-weight: 700;
   line-height: 1.5;
+  text-align: center;
 }
 form {
-  border-radius: 30px;
-  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
-  padding: 100px;
-  max-width: 400px;
-  display: block;
-  margin: 0 auto;
   display: flex;
-  background-color: #fff;
 }
 form input {
   padding: 15px;
+  font-family: "Poppins", sans-serif;
 
+  font-style: normal;
   position: relative;
   left: -20px;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
   border: 2px solid rgb(30, 73, 133);
   border-radius: 10px;
 }
+.form-container {
+  border-radius: 30px;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+  padding: 100px;
+  max-width: 450px;
+  display: block;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.hint {
+  font-size: 13px;
+  color: rgb(30, 73, 133);
+  font-weight: 300;
+  margin-top: 30px;
+  border-left: 2px solid rgb(30, 73, 133);
+  padding: 10px;
+  background-color: #eef4fa;
+}
 footer {
   color: #707072;
   font-size: 13px;
+  text-align: center;
+  margin: 40px;
 }
 a {
   color: rgb(30, 73, 133);
@@ -57,6 +72,8 @@ a {
   margin: 100px;
 }
 .poem-display {
+  font-style: italic;
+  text-align: center;
   display: block;
   margin: 70px auto;
   max-width: 150px;
@@ -67,4 +84,21 @@ a {
   border-right: 4px solid rgb(30, 73, 133);
   border-left: 4px solid rgb(30, 73, 133);
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+}
+.hidden {
+  display: none;
+}
+.generate {
+  animation: blink-animation 0.5s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
