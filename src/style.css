@@ -1,0 +1,22 @@
+body {
+  text-align: center;
+}
+
+form {
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 0, 0, 0, 0.4;
+  padding: 100px;
+  max-width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+form input {
+  padding: 15px;
+  border-radius: 20px;
+}
+.poem-write {
+  display: block;
+  margin: 0 auto;
+  max-width: 150px;
+}
